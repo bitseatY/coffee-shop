@@ -54,3 +54,66 @@ body{
     color: white;
     padding:5px;
 }
+.login:hover{
+    background-color: rgba(0, 0, 0, 0.438);
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.397);
+    height: 10vh;
+}
+.logo p{
+    font-size: 30px;
+    color:white;
+   
+}
+.logo i{
+    color:rgba(54, 13, 13) ;
+    -webkit-text-stroke: 1px white;
+    margin-right: 5px;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    gap:10px;
+}
+.nav a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+}
+.phone i, .phone a{
+    color:white;
+    font-size:20px;
+}
+.phone a{
+    text-decoration: none;
+}
+.nav a:hover{
+    color:rgba(54, 13, 13);
+}
+.phone i{
+    margin-right: 5px;
+}
+.phone a:hover{
+    color:rgba(54, 13, 13);
+}
+.welcome{
+    padding:10vw  0  0 40vw;
+    max-width: 900px;
+    width: 100%;
+    
+}
+.welcome h3, .welcome h1 ,.welcome p{
+    color:white;
+}
+.welcome h1{
+    font-size: 30px;
+    margin:15px 0;
+}
+.welcome h3, .welcome p{
+    margin: 15px 0;
+}
