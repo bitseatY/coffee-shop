@@ -11,6 +11,7 @@
     text-transform: capitalize;
      outline: none;
      text-decoration: none;
+     border: none;
     
 }
 :root{
@@ -47,6 +48,9 @@ html{
     color: white;
     font-size:3rem;
 }
+.nav-bar #close-menu-button, #open-menu-button{
+    display: none;
+}
 
 .nav-bar .navbar-links {
       list-style: none;
@@ -58,7 +62,7 @@ html{
       
 }
 .nav-bar .navbar-links  li a{
-    text-decoration: none;
+    
     font-size: 1.5rem;
     color: white;
      border-radius: 1.8rem;
@@ -112,7 +116,9 @@ html{
 }
 
 .hero-section .image img {
-      width: 70%;
+      width: 100%;
+      max-width: 60rem;
+      display: block;
      
 }
 .hero-section .hero .content .buttons{
@@ -131,6 +137,60 @@ html{
     transition: .3s ease;
     
 }
+
 .hero-section .hero .content .buttons .btn:hover{
-    transform: scale(1.1);
+   
+    color:white;
+    background: transparent;
+    border:.1rem solid white;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:900px){
+  .nav-bar .navbar-links{
+    
+    position: fixed;
+    top:0;left:0;
+    background-color: white;
+    height: 100%;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+   .nav-bar .navbar-links li{
+      margin-top: 1.5rem;
+
+   }
+
+  .nav-bar .navbar-links li a{
+         color: var(--primary-color);
+  }
+  .nav-bar #open-menu-button, .navbar-links #close-menu-button{
+    display: block;
+    font-size: 2rem;
+  }
+  .nav-bar .navbar-links #close-menu-button{
+    position: absolute;
+    top:1rem; right: 2rem;
+    color:var(--primary-color);
+    background-color: white;
+    
+  }
+  .nav-bar #open-menu-button{
+    color: white;
+    background-color: var(--primary-color);
+  }
+
+
 }
