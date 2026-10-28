@@ -155,10 +155,14 @@ html{
 
 
 @media(max-width:900px){
+    html{
+        font-size: 50%;
+    }
+
   .nav-bar .navbar-links{
     
     position: fixed;
-    top:0;left:0;
+    top:0;left:-30rem;
     background-color: white;
     height: 100%;
     width: 30rem;
@@ -167,6 +171,7 @@ html{
     justify-content: flex-start;
     align-items: center;
     padding: 2rem 1rem;
+    transition: 0.3s ease;
   }
    .nav-bar .navbar-links li{
       margin-top: 1.5rem;
@@ -190,6 +195,9 @@ html{
   .nav-bar #open-menu-button{
     color: white;
     background-color: var(--primary-color);
+  }
+  body.show-mobile-menu .nav-bar .navbar-links{
+      left:0;
   }
 
 
