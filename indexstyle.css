@@ -32,6 +32,7 @@ html{
     padding:1.5rem 3rem;
     position: fixed;
     top:0;left: 0;right: 0;
+    z-index: 1000;
    
 }
 
@@ -216,6 +217,7 @@ html{
     align-items: center;
     background-color: rgb(22, 31, 23);
     color:white;
+    padding:1rem 0 8rem 0;
 }
 
 
@@ -250,6 +252,92 @@ html{
     
 }
 /*menu section styling ends*/
+
+/*testimonial section styling begins*/
+.testimonial-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(240, 226, 228);
+    padding: 5rem 2rem 10rem;
+   
+}
+.testimonial-section  .swiper{
+   width: 100%;
+   padding:5rem 3rem;
+    
+   
+}
+
+
+
+.testimonial-section .swiper .swiper-wrapper .swiper-slide{
+     text-align: center;
+     
+}
+.testimonial-section .swiper .swiper-wrapper .swiper-slide .name{
+    font-size: 2rem;
+    margin:2rem 0;
+}
+.testimonial-section .swiper .swiper-wrapper .swiper-slide .feedback{
+    font-size: 1.5rem;
+    font-weight:900;
+    
+}
+
+
+
+.testimonial-section .testimonial-list .testimonial .user-img{
+     width: 18rem;
+     aspect-ratio: 1;
+     object-fit: cover;
+     border-radius: 50%;
+     margin-bottom: 3rem;
+}
+.testimonial-section .swiper .swiper-pagination-bullet{
+    background:var(--orange);
+    width: 1.5rem;
+    height: 1.5rem;
+    opacity: 1;
+    
+}
+.testimonial-section .swiper .button{
+     color:var(--orange);
+     transition: 0.3s ease;
+   
+}
+.testimonial-section .swiper .button:hover{
+    color:var(--primary-color);
+}
+
+/*testimonial section styling ends*/
+
+/*gallery section styling begins*/
+.gallery-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:5rem 0 10rem 5rem;
+    
+}
+.gallery-section .gallery-list{
+     display: flex;
+     flex-wrap: wrap;
+     gap:3.2rem;
+     padding: 3rem 0;
+}
+.gallery-section .gallery-list .gallery-item{
+    width: calc(100% / 3 - 3.2rem);
+}
+.gallery-section .gallery-list .gallery-item img{
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+
+
+/*gallery section styling ends*/
 
 
 
@@ -365,6 +453,9 @@ html{
 .menu-section .menu-content  li .image{
     max-width:50%;
     
+}
+.testimonial-section .swiper .button{
+    display: none;
 }
 }
 

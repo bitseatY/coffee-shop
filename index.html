@@ -7,6 +7,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
     <title>Document</title>
   </head>
   <body>
@@ -81,7 +86,6 @@
       <!--menu section begins-->
       <section class="menu-section">
         <h2 class="title">our menu</h2>
-
         <ul class="menu-content">
           <li>
             <img class="image" src="images/coffee.png" alt="" />
@@ -96,30 +100,100 @@
             <p>creamy and frothy cold coffee to make you cool</p>
           </li>
           <li>
-            <img class="image" src="images/refreshment.jpg" alt="" />
+            <img class="image" src="images/refreshment.png" alt="" />
             <h3 class="name">refreshment</h3>
             <p>fruit and icy refreshing drink to keep you cool</p>
           </li>
           <li>
-            <img class="image" src="images/combos.jpg" alt="" />
+            <img class="image" src="images/combo.png" alt="" />
             <h3 class="name">special combos</h3>
             <p>your favourite meals in one plate</p>
           </li>
           <li>
-            <img class="image" src="images/dessert.jpg" alt="" />
+            <img class="image" src="images/dessert.png" alt="" />
             <h3 class="name">dessert</h3>
             <p>satiate your palate and take you on culinary treat</p>
           </li>
           <li>
-            <img class="image" src="images/burger.jpg" alt="" />
+            <img class="image" src="images/burger.png" alt="" />
             <h3 class="name">burger & fries</h3>
             <p>quick bites to satisify your hunger</p>
           </li>
         </ul>
       </section>
-
       <!--menu section ends-->
+
+      <!--testimonial section begins-->
+      <section class="testimonial-section">
+        <h2 class="title">testimonials</h2>
+
+        <div class="slider-container swiper">
+          <ul class="testimonial-list swiper-wrapper">
+            <li class="testimonial swiper-slide">
+              <img src="images/user1.avif" alt="" class="user-img" />
+              <h3 class="name">jhon micheal</h3>
+              <i class="feedback">"nice latte i loved it."</i>
+            </li>
+            <li class="testimonial swiper-slide">
+              <img src="images/user2.jpg" alt="" class="user-img" />
+              <h3 class="name">alex daniel</h3>
+              <i class="feedback">"nice latte i loved it."</i>
+            </li>
+            <li class="testimonial swiper-slide">
+              <img src="images/user3.jpg" alt="" class="user-img" />
+              <h3 class="name">sarah sherman</h3>
+              <i class="feedback"> "nice latte i loved it."</i>
+            </li>
+            <li class="testimonial swiper-slide">
+              <img src="images/user4.jpg" alt="" class="user-img" />
+              <h3 class="name">melanie clark</h3>
+              <i class="feedback">"nice latte i loved it."</i>
+            </li>
+            <li class="testimonial swiper-slide">
+              <img src="images/user5.jpg" alt="" class="user-img" />
+              <h3 class="name">steve diaz</h3>
+              <i class="feedback">"nice latte i loved it."</i>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev button"></div>
+          <div class="swiper-button-next button"></div>
+        </div>
+      </section>
+
+      <!--testimonial section ends-->
+
+      <!--gallery section begins-->
+      <section class="gallery-section">
+        <h2 class="title">gallery</h2>
+        <ul class="gallery-list">
+          <li class="gallery-item">
+            <img src="images/gallery1.jpg" alt="" />
+          </li>
+          <li class="gallery-item">
+            <img src="images/gallery2.jpg" alt="" />
+          </li>
+          <li class="gallery-item">
+            <img src="images/gallery3.jpg" alt="" />
+          </li>
+          <li class="gallery-item">
+            <img src="images/gallery4.jpg" alt="" />
+          </li>
+          <li class="gallery-item">
+            <img src="images/gallery5.jpg" alt="" />
+          </li>
+          <li class="gallery-item">
+            <img src="images/gallery6.jpg" alt="" />
+          </li>
+        </ul>
+      </section>
+
+      <!--gallery section ends-->
     </main>
-    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
