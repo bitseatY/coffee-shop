@@ -25,12 +25,12 @@
 
         <ul class="navbar-links">
           <button id="close-menu-button" class="fas fa-times"></button>
-          <li><a href="#">home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">menu</a></li>
-          <li><a href="#">gallery</a></li>
-          <li><a href="#">contact</a></li>
-          <li><a href="#">testimonials</a></li>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#menu">menu</a></li>
+          <li><a href="#gallery">gallery</a></li>
+          <li><a href="#contact">contact</a></li>
+          <li><a href="#testimonial">testimonials</a></li>
         </ul>
         <button id="open-menu-button" class="fas fa-bars"></button>
       </section>
@@ -38,7 +38,7 @@
     <!--header section ends-->
     <main>
       <!--hero section begins-->
-      <section class="hero-section">
+      <section id="home" class="hero-section">
         <div class="hero">
           <div class="content">
             <h3>best coffee</h3>
@@ -59,7 +59,7 @@
       </section>
       <!--hero section ends-->
       <!--about section begins-->
-      <section class="about-section">
+      <section id="about" class="about-section">
         <div class="section-content">
           <div class="about-image">
             <img src="images/about.jpg" alt="" />
@@ -84,7 +84,7 @@
 
       <!--about section ends-->
       <!--menu section begins-->
-      <section class="menu-section">
+      <section id="menu" class="menu-section">
         <h2 class="title">our menu</h2>
         <ul class="menu-content">
           <li>
@@ -124,7 +124,7 @@
       <!--menu section ends-->
 
       <!--testimonial section begins-->
-      <section class="testimonial-section">
+      <section id="testimonial" class="testimonial-section">
         <h2 class="title">testimonials</h2>
 
         <div class="slider-container swiper">
@@ -164,32 +164,92 @@
       <!--testimonial section ends-->
 
       <!--gallery section begins-->
-      <section class="gallery-section">
+      <section id="gallery" class="gallery-section">
         <h2 class="title">gallery</h2>
         <ul class="gallery-list">
           <li class="gallery-item">
-            <img src="images/gallery1.jpg" alt="" />
+            <img class="gallery-image" src="images/gallery1.jpg" alt="" />
           </li>
           <li class="gallery-item">
             <img src="images/gallery2.jpg" alt="" />
           </li>
           <li class="gallery-item">
-            <img src="images/gallery3.jpg" alt="" />
+            <img class="gallery-image" src="images/gallery3.jpg" alt="" />
           </li>
           <li class="gallery-item">
-            <img src="images/gallery4.jpg" alt="" />
+            <img class="gallery-image" src="images/gallery4.jpg" alt="" />
           </li>
           <li class="gallery-item">
-            <img src="images/gallery5.jpg" alt="" />
+            <img class="gallery-image" src="images/gallery5.jpg" alt="" />
           </li>
           <li class="gallery-item">
-            <img src="images/gallery6.jpg" alt="" />
+            <img class="gallery-image" src="images/gallery6.jpg" alt="" />
           </li>
         </ul>
       </section>
 
       <!--gallery section ends-->
+
+      <!--contact section begins-->
+      <section id="contact" class="contact-section">
+        <h2 class="title">contact us</h2>
+        <div class="contact-content">
+          <ul class="contact-info-list">
+            <li class="contact-info">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>addis ababa , piassa</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-envelope"></i>
+              <p>coffeepiassa@gmail.com</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>monday - sunday 8:00am - 9:00pm</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>+251 900345699</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-globe"></i>
+              <p>www.coffeehouse.com</p>
+            </li>
+          </ul>
+          <form action="#" class="contact-form">
+            <input
+              class="blank"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="your name"
+              required
+            />
+            <input
+              class="blank"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your email"
+              required
+            />
+            <textarea
+              class="blank"
+              name="comment"
+              id="comment"
+              placeholder="your message"
+            ></textarea>
+            <button class="submit">submit</button>
+          </form>
+        </div>
+      </section>
+
+      <!--contact section ends-->
+      <!--footer section begins-->
+
+      <!--footer section ends-->
     </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
       defer
